@@ -1,0 +1,91 @@
+1. Data Quality & Overview
+
+- How many rows and columns are in the dataset?
+ Loaded 541909 rows and 8 columns
+
+- What percentage of Customer ID or Description values are missing?
+ 24.926694334288598 of CustomerID values are missing.
+ 0.2683107311375157 of Description values are missing.
+
+- Are there any negative or zero values in Quantity or UnitPrice?
+ Quantity has 10624 bad values
+ UnitPrice has 2517 bad values
+
+
+2. Sales Volume & Revenue
+
+⦁	What's the total revenue (sum of Quantity UnitPrice) over the entire period?
+ Net revenue : 8300065.81
+ total_items : 5,167,812
+⦁	How does monthly revenue trend over time?
+ Month
+2010-12-01     554604.020
+2011-01-01     475074.380
+2011-02-01     436546.150
+2011-03-01     579964.610
+2011-04-01     426047.851
+2011-05-01     648251.080
+2011-06-01     608013.160
+2011-07-01     574238.481
+2011-08-01     616368.000
+2011-09-01     931440.372
+2011-10-01     974603.590
+2011-11-01    1132407.740
+2011-12-01     342506.380
+View the graph in the colab
+
+⦁	Which weekday has the highest average sales volume?
+ Tuesday
+ View the graph in the colab
+
+3. Product Analysis
+⦁	What are the top 10 products by quantity sold vs. by total revenue?
+ Top 10 by Quantity
+Description
+PAPER CRAFT , LITTLE BIRDIE           80995
+MEDIUM CERAMIC TOP STORAGE JAR        77916
+WORLD WAR 2 GLIDERS ASSTD DESIGNS     54415
+JUMBO BAG RED RETROSPOT               46181
+WHITE HANGING HEART T-LIGHT HOLDER    36725
+ASSORTED COLOUR BIRD ORNAMENT         35362
+PACK OF 72 RETROSPOT CAKE CASES       33693
+POPCORN HOLDER                        30931
+RABBIT NIGHT LIGHT                    27202
+MINI PAINT SET VINTAGE                26076
+Name: Quantity, dtype: int64
+
+Top 10 by Revenue
+Description
+PAPER CRAFT , LITTLE BIRDIE           168469.60
+REGENCY CAKESTAND 3 TIER              142592.95
+WHITE HANGING HEART T-LIGHT HOLDER    100448.15
+JUMBO BAG RED RETROSPOT                85220.78
+MEDIUM CERAMIC TOP STORAGE JAR         81416.73
+POSTAGE                                77803.96
+PARTY BUNTING                          68844.33
+ASSORTED COLOUR BIRD ORNAMENT          56580.34
+Manual                                 53779.93
+RABBIT NIGHT LIGHT                     51346.20
+
+⦁	What does the distribution of line-item Quantity look like? (Any extreme bulk orders?)
+⦁	What's the typical range and distribution of UnitPrice?
+
+
+4. Customer Behavior
+⦁	How many unique customers are there? What share are one-time vs. repeat buyers?
+ 4338
+ Repeat rate : 65.58%
+ One time rate : 34.42%
+⦁	What's the average order value (AOV) per customer?
+ 
+⦁	Which countries drive the most revenue?
+ UK
+
+5. Returns & Cancellations
+⦁	What proportion of transactions are returns (Quantity < 0)?
+⦁	Which products or countries have the highest return rates?
+
+
+6. Seasonality & Time Series
+⦁	Are there clear seasonal patterns-which months or quarters spike?
+⦁	Plot a rolling 30-day revenue average to smooth out noise.
